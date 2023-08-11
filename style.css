@@ -1,0 +1,459 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    /* overflow-x:hidden; */
+}
+body{
+    width: 100%;
+    background-color: #0f1b1a;
+    /* overflow-x: scroll; */
+    scrollbar-color: rgb(27, 255, 168);
+    
+}
+a{
+  text-decoration: none;
+
+}
+nav{
+    background-color: rgb(65, 105, 91);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.logo{
+  font-size: 30px;
+  width: 180px;
+  height: 50px;
+  filter:invert(100%) ;
+  
+}
+ul{
+    list-style: none;
+    margin-right: 125px;
+    display: flex;
+    gap: 25px;
+
+}
+li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+i:hover{
+    color: aquamarine;
+}
+.hero button{
+  border: none;
+}
+
+.navi1{
+    display:flexbox;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    z-index: 98;
+    top: 20px;
+    background: rgb(6,6,13);
+    background: linear-gradient(90deg, rgba(6,6,13,1) 0%, rgba(40,91,75,1) 63%);
+}
+.navi101{
+  margin-left: 50px;
+}
+.navi102 div{
+    color: aliceblue;
+    font-family: Helvetica, sans-serif;
+    font-size: larger;
+   justify-content: end;
+}
+
+.navi102 div:hover{
+    color: aquamarine;
+    text-decoration: underline;
+    
+}
+.sec2{
+    background-image: url(images/ai.png);
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: aliceblue;
+    filter: brightness(100%);
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    
+}
+.sec2::before{
+    z-index: -1;
+
+}
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero button{
+    background-color: rgb(77, 148, 255);
+    font-weight: bold;
+    padding: 10px 65px 10px 65px;
+    margin-top: 10px;
+   
+}
+.first{
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    font-size: large;
+    text-shadow: 1.5px 1.5px black;
+    animation: 1s ease-out 0s doop;
+    
+}
+@keyframes doop{
+    0%{
+        opacity: 0;
+    transform: translate3d(0, -90px, 0);
+    cursor: pointer;
+    }
+    100%{
+         opacity: 1;
+    transform: translate3d(0, 0, 0);
+    }
+   
+}
+
+.hero h1{
+    font-size: 70px;
+    place-content: center;
+    text-align: center;
+    width: 80%;
+    font-family:poppins,Helvetica,Arial,Sans-serif;
+    font-weight: 600;
+    /* font-stretch:semi-expanded; */
+    text-shadow: 3px 3px 6px rgba(0,0,0,.9);
+    animation: 2s ease-out 0s doop2;
+}
+@keyframes doop2{
+    0%{
+        opacity: 0;
+    transform: translate3d(0, -90px, 0);
+    cursor: pointer;
+    }
+    100%{
+         opacity: 1;
+    transform: translate3d(0, 0, 0);
+    }
+   
+}
+
+.sec3{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15%;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec3 h1{
+    font-size: 40px;
+    color: rgb(23, 255, 178);
+}
+.sec3 p{
+    font-size: larger;
+    margin-top: 20px;
+    color: azure;
+    
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+    
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background: transparent;
+    color: rgb(21, 255, 200);
+    border: 2px solid rgb(21, 255, 200);
+    border-radius: 35px 0px 35px 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .flip-card-front i{
+    font-size: 108px;
+    
+  }
+  .flip-card-front p{
+    font-size: 50px;
+  }
+  
+  
+  .flip-card-back {
+    background: transparent;
+    color: white;
+    border: 2px solid whitesmoke;
+    transform: rotateY(180deg);
+    border-radius: 0px 35px 0px 35px;
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.sec5{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 15%;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: poppins,Helvetica,Arial,Sans-serif;
+}
+.sec5 h1{
+    color: rgb(34, 255, 181);
+}
+.staff-img{
+    border-radius: 35px 0px 35px 0px;
+    margin: auto 0px;
+}
+.context1 h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+.context2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.context1 p{
+    margin-bottom: 10px;
+    font-size: 22px;
+    
+}
+
+.counters{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 30px;
+}
+.count1{
+    font-size: 60px;
+    /* font-weight:400; */
+    color: rgb(28, 255, 221);
+   
+}
+.count2{
+    font-size: 60px;
+    /* font-weight: 400; */
+    color: rgb(38, 255, 219);
+}
+.count3{
+    font-size: 60px;
+    /* font-weight: bold; */
+    color: rgb(32, 188, 255);
+    
+}
+
+.count-info{
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    width: 65%;
+    margin: auto;
+}
+.sec6{
+  width: 80%;
+margin: 0% auto;
+  color: aliceblue;
+  font-size:22px;
+}
+.sec6 h1{
+  font-size: 40px;
+  color: rgb(42, 255, 184);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.sec600{
+  width: 60%;
+margin: 0px auto 40px auto;
+  color: aliceblue;
+  font-size:22px;
+}
+.sec600 h1{
+  font-size: 40px;
+  margin-bottom:20px ;
+  color: rgb(42, 255, 184);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.sec7{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.sec7 h4{
+    color: aqua;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.sec7 p{
+    color: rgb(228, 229, 229);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+   margin: 40px 0px;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #31674f;
+    display: flex;
+    border-radius: 35px 0px 35px 0px;
+    flex-direction: column;
+    padding: 30px 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+
+  swiper-slide h2{
+    font-size: larger;
+    color: rgb(44, 243, 176);
+  }
+  swiper-slide p{
+    color: aliceblue;
+    font-size: small;
+    margin-bottom: 10px;
+  }
+  swiper-slide button{
+    background-color: rgb(48, 255, 186);
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+  swiper-slide i{
+    margin: 10px 0px;
+    background-color: rgb(45, 255, 185);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .nav201 {
+    color: rgb(26, 137, 234);
+    justify-content: left;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  
+.fis2{
+    padding: 10%;
+}
+.fis1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+}
+  .fis2 h1{
+    font-weight: bold;
+    color: aliceblue;
+  }
+  .fis2 p{
+    /* font-weight: bold; */
+    color: aliceblue;
+  }
+  .fis2 p:hover{
+    color: aquamarine;
+  }
+
+  .sec8{
+    background: rgb(6,6,13);
+    background: linear-gradient(90deg, rgba(6,6,13,1) 10%, rgba(40,91,75,1) 63%);
+  }
+
+.sec501{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.sec9{
+  background-color: #0f1b1a;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.sec901{
+  display: flex;
+  color: aliceblue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec901 ul li a{
+  color: aqua;
+  
+}
+.sec901 ul li a:hover{
+  color: rgb(40, 253, 182);
+}
